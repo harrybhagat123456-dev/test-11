@@ -379,7 +379,7 @@ async def drm_handler(bot: Client, m: Message):
             elif "https://cpvod.testbook.com/" in url or "classplusapp.com/drm/" in url:
                 url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
                 try:
-                    url = f"https://sainibotsdrm.vercel.app/api?url={url}&token={cptoken}&auth=4443683167"
+                    url = f"https://clasplus-hhdr.vercel.app/api?url={url}&token={cptoken}&auth=4443683167"
                     response = requests.get(url)
                     try:
                         data = response.json()
